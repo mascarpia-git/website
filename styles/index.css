@@ -25,7 +25,7 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-25%, -50%) scale(1.5);
+  transform: translate(-25%, -50%) scale(1.2);
   max-width: 100%;
   max-height: 100%;
   z-index: 2;
@@ -209,4 +209,5 @@
   .hero-btn {
     width: 100%;
   }
+
 }
