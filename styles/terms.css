@@ -1,0 +1,27 @@
+.terms-container {
+    max-width: 900px;       /* Keeps content readable */
+    margin: 0 auto;         /* Centers container */
+    padding: 40px 20px;     /* Adds space around content */
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #333;
+    background-color: #fff; /* Optional: light background */
+}
+
+.terms-main-title {
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.terms-container p {
+    margin-bottom: 20px; /* Spacing between paragraphs */
+}
+
+.terms-container strong {
+    font-weight: 600;  /* Makes section headers stand out */
+}
+
+

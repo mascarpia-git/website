@@ -1,0 +1,40 @@
+/* Privacy container and text */
+.privacy-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #333;
+    background-color: #fff;
+}
+
+/* Privacy title */
+.privacy-main-title {
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Paragraph spacing */
+.privacy-container p {
+    margin-bottom: 20px;
+}
+
+/* Section headers */
+.privacy-container strong {
+    font-weight: 600;
+}
+
+/* Links in privacy page */
+.privacy-container a {
+    color: #800020;      /* Bordeaux */
+    font-weight: bold;   /* Bold text */
+    text-decoration: none; /* No underline */
+}
+
+.privacy-container a:hover {
+    opacity: 0.8;        /* Optional subtle hover effect */
+}

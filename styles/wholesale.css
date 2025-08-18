@@ -1,0 +1,17 @@
+.wholesale-intro {
+  max-width: 600px;
+  margin: 5rem auto 1rem auto;
+  font-family: 'HelveticaNeue', Helvetica, Arial, sans-serif;
+  text-align: center;
+}
+
+.wholesale-intro h2{
+  font-family: 'HelveticaNeue', sans-serif;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+
+.wholesale-intro p{
+  font-family: 'HelveticaNeue', sans-serif;
+  font-weight: 300;
+}

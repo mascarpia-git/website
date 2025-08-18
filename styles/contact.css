@@ -1,0 +1,148 @@
+/* contact.css */
+.required {
+  color: #222;
+  font-weight: 700; /* bold for emphasis */
+  font-size: 1rem;
+  margin-left: 0.25rem;
+}
+
+.contact-section {
+  max-width: 600px;
+  background: #fff;
+  margin: 2rem auto;
+  padding: 2rem;
+  box-shadow: 0 0 20px rgb(0 0 0 / 0.1);
+  box-sizing: border-box;
+  font-family: 'HelveticaNeue', Helvetica, Arial, sans-serif;
+}
+
+.contact-section h1 {
+  font-family: 'HelveticaNeue', sans-serif;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Inputs & textarea */
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  font-family: 'HelveticaNeue', Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 400; /* normal weight for readability */
+  box-sizing: border-box;
+  color: #222;
+}
+
+/* Labels */
+.contact-form label {
+  font-family: 'HelveticaNeue', Helvetica, Arial, sans-serif;
+  font-weight: 300; /* light for a clean look */
+  font-size: 0.9rem;
+  margin-bottom: 0.25rem;
+  color: #555;
+}
+
+/* Button */
+.contact-form button {
+  align-self: flex-end;
+  display: inline-block;
+  background-color: #222;
+  color: #ffffff;
+  font-family: 'HelveticaNeue', sans-serif;
+  font-weight: 500; /* match hero-btn */
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  border: 1px solid transparent;
+  border-radius: 0; /* squared like hero-btn */
+  transition: all 0.3s ease;
+  text-align: center;
+  text-transform: uppercase; /* optional, keep if you like */
+  letter-spacing: 0.05em;     /* optional refinement */
+}
+
+.contact-form button:hover {
+  background-color: #ffffff;
+  border-color: #222;
+  color: #222;
+  cursor: pointer;
+}
+
+/* Social contact section */
+.social-contact {
+  font-size: 1rem;
+  max-width: 600px;
+  margin: 5rem auto 1rem auto;
+  text-align: center;
+  font-family: 'HelveticaNeue', Helvetica, Arial, sans-serif;
+}
+
+.social-contact h2 {
+  margin-bottom: 2rem;
+  font-weight: 500; /* medium weight heading */
+  font-size: 1.5rem;
+}
+
+/* Social icons */
+.social-icons a {
+  margin: 0 0.5rem;
+  display: inline-block;
+}
+
+.social-icons img {
+  width: 32px;
+  height: 32px;
+  filter: brightness(0) saturate(100%) invert(13%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(87%) contrast(87%);
+  transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+  transform: scale(1.1);
+}
+
+/* Contact intro text */
+.contact-intro {
+  margin-top: 1rem;
+  font-weight: 300; /* light for secondary text */
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Map */
+.map-container {
+  margin-top: 2rem;
+}
+
+/* Name row for first/last name */
+.name-row {
+  display: flex;
+  gap: 1rem;  /* space between first and last name */
+}
+
+.name-row .form-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.name-row input {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  font-family: 'HelveticaNeue', Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  box-sizing: border-box;
+}
+
+.name-row .form-group label {
+  margin-bottom: 0.5rem;
+  font-weight: 300; /* light like other labels */
+  color: #555;
+}

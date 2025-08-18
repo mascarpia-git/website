@@ -1,0 +1,212 @@
+/* Hero split */
+.hero {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+}
+
+.hero-left {
+  flex: 0.5;
+  position: relative;
+}
+
+.hero-left::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, #fffbf0 0%, #fffbf0 100%);
+  z-index: 1;
+}
+
+.hero-left img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-25%, -50%) scale(1.5);
+  max-width: 100%;
+  max-height: 100%;
+  z-index: 2;
+  object-fit: contain;
+}
+
+.hero-right {
+  flex: 1;
+  background-color: #fffbf0;
+  display: flex;
+  align-items: center;      
+  justify-content: center;
+  padding: 0rem 2rem 2rem 2rem;
+  color: #6a0100;
+}
+
+.hero-logo {
+  display: block;
+  max-width: 400px; /* adjust to match the width of the H1 */
+  width: 40%;       /* optional: makes it responsive */
+  margin: 0 auto 2rem auto; /* center and add bottom spacing */
+}
+
+.hero-text {
+  max-width: 600px;
+  text-align: left;
+  font-family: 'HelveticaNeue', sans-serif;
+  font-weight: 500; 
+  margin-top: -8rem;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.hero-text p {
+  font-family: 'HelveticaNeue', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+  }
+  .hero-left, .hero-right {
+    flex: none;
+    width: 100%;
+    height: 50vh;
+  }
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+  .hero-text p {
+    font-size: 1rem;
+  }
+}
+.hero-buttons {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.hero-btn {
+  flex: 1;
+  display: inline-block;
+  background-color: #6a0100;
+  color: #fffbf0;
+  font-family: 'HelveticaNeue', sans-serif;
+  font-weight: 500;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  border: 1px solid transparent;
+  border-radius: 0;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.hero-btn:hover {
+  background-color: #fffbf0;
+  border-color: #6a0100;
+  color: #6a0100;
+  cursor: pointer;
+}
+
+/* Shared stripe base */
+.stripe-section {
+  text-align: center;
+  padding: 5rem 2rem;              /* unified padding */
+  font-family: 'HelveticaNeue', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Headings inside both stripes */
+.stripe-section h2,
+.stripe-section h3 {
+  font-weight: 300;                /* lighter but consistent */
+  font-size: 2.5rem;               /* unified heading size */
+  margin-bottom: 1.5rem;
+  font-family: 'HelveticaNeue', sans-serif;
+}
+
+/* Paragraphs inside both stripes */
+.stripe-section p {
+  font-weight: 300;
+  font-size: 1.5rem;
+  line-height: 1.6;
+  margin: 0 auto 2rem auto;
+  max-width: 800px;
+}
+
+/* Variant 1: red background */
+.natural-stripe {
+  background-color: #6a0100;
+  color: #fffbf0;
+}
+
+/* Variant 2: beige background + images */
+.ingredients-section {
+  background-color: #fffbf0;
+  color: #6a0100;
+}
+
+/* Keep ingredient images styling */
+.ingredients-images {
+  display: flex;
+  gap: 6rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.ingredients-images img {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  object-position: center;
+  background-color: #fffbf0;
+  mix-blend-mode: multiply;
+}
+/* Mobile responsiveness */
+@media (max-width: 1100px) {
+  .hero {
+    flex-direction: column;
+    height: auto; /* allow content to determine height */
+  }
+  .hero-left, .hero-right {
+    flex: none;
+    width: 100%;
+    height: auto;
+  }
+  .hero-left {
+    height: 40vh; /* reduce image section height */
+  }
+.hero-left img {
+    position: absolute;
+    top: 50%;                /* vertical center */
+    left: 0;                 /* left edge flush with screen */
+    transform: translate(0%, -50%) scale(1); /* only vertical centering */
+    max-width: 100%;         /* prevent overflow */
+    height: auto;
+}
+
+  .hero-text {
+    margin-top: 2rem; /* adjust text spacing for mobile */
+    text-align: center; /* center text */
+  }
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+  .hero-text p {
+    font-size: 1rem;
+  }
+  .hero-buttons {
+    flex-direction: column;
+  }
+  .hero-btn {
+    width: 100%;
+  }
+}
