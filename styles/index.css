@@ -25,27 +25,12 @@
   position: absolute;
   top: 50%;
   left: 0;
-  transform: translateY(-50%) scale(1); /* initial scale 1 */
+  transform: translateY(-50%) scale(0.6);
   transform-origin: left center;
-  max-width: 40vw; /* make it take up max 40% of viewport width */
+  max-width: none;
   max-height: 100%;
-  width: auto;
-  height: auto;
   z-index: 2;
   object-fit: contain;
-}
-
-/* Optional: further scale down if viewport is below 1500px */
-@media (max-width: 1500px) {
-  .hero-left img {
-    max-width: 35vw;
-  }
-}
-
-@media (max-width: 1300px) {
-  .hero-left img {
-    max-width: 30vw;
-  }
 }
 
 .hero-right {
